@@ -1,0 +1,28 @@
+---
+title: "Developing data products"
+author: "Jacob Mokgadi"
+date: "14/03/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Instructions
+Create a web page using R Markdown that features a map created with Leaflet.
+
+Host your webpage on either GitHub Pages, RPubs, or NeoCities.
+
+## Submission
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+addMarkers(lat=-19.17578, lng=22.24781, popup = "Roots")
+
+my_map
+```
+
+
